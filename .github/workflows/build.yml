@@ -1,20 +1,5 @@
-# GitHub Actions Workflow created for testing and preparing the plugin release in following steps:
-# - validate Gradle Wrapper,
-# - run test and verifyPlugin tasks,
-# - run buildPlugin task and prepare artifact for the further tests,
-# - run IntelliJ Plugin Verifier,
-# - create a draft release.
-#
-# Workflow is triggered on push and pull_request events.
-#
-# Docs:
-# - GitHub Actions: https://help.github.com/en/actions
-# - IntelliJ Plugin Verifier GitHub Action: https://github.com/ChrisCarini/intellij-platform-plugin-verifier-action
-#
-## JBIJPPTPL
-
 name: Build
-on: [push, pull_request]
+on: [ push, pull_request ]
 jobs:
 
   # Run Gradle Wrapper Validation Action to verify the wrapper's checksum
@@ -92,6 +77,9 @@ jobs:
       # Check out current repository
       - name: Fetch Sources
         uses: actions/checkout@v2
+        with:
+          submodules: 'true'
+          token: ${{ secrets.FETCH_SUBMODULES_PAT }}
 
       # Cache Gradle Dependencies
       - name: Setup Gradle Dependencies Cache
@@ -196,7 +184,7 @@ jobs:
   releaseDraft:
     name: Release Draft
     if: github.event_name != 'pull_request'
-    needs: [build, verify]
+    needs: [ build, verify ]
     runs-on: ubuntu-latest
     steps:
 

@@ -1,3 +1,7 @@
-.gradle
-.idea
-build
+.idea/
+out/
+src/main/resources/bitrix-idea-library/
+bitrix-idea.jar
+.gradle/
+build/
+.run/

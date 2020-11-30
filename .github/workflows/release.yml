@@ -1,10 +1,7 @@
-# GitHub Actions Workflow created for handling the release process based on the draft release prepared
-# with the Build workflow. Running the publishPlugin task requires the PUBLISH_TOKEN secret provided.
-
 name: Release
 on:
   release:
-    types: [prereleased, released]
+    types: [ prereleased, released ]
 
 jobs:
 
@@ -58,8 +55,8 @@ jobs:
       # Commit patched Changelog
       - name: Commit files
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "git@qq-agency.ru"
+          git config --local user.name "QQ Actions"
           git commit -m "Update changelog" -a
 
       # Push changes
