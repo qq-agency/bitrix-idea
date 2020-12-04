@@ -1,6 +1,18 @@
 # CHANGELOG
 
 ## [Unreleased]
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+## [1.0.14]
 ### Changed
 - Updated Bitrix CMS core
 - A supported version upgraded to 2020.4
