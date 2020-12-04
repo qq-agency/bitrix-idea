@@ -29,9 +29,9 @@ The plugin can be installed on following IntelliJ-based:
 
 ## Release versions schema
 
-| Plugin version number | Platform number |
-| ---- | --- |
-| 1.0.x | PhpStorm 2017.3 | 
+| Plugin version number | Since Version | Until Version |
+| ----- | ------ | ------ |
+| 1.0.x | 2017.3 | 2020.4 |
 
 ## Bugs
 
