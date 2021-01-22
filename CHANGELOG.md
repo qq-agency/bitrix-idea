@@ -1,17 +1,11 @@
 # CHANGELOG
 
 ## [Unreleased]
-### Added
-
-### Changed
-
-### Deprecated
+- Updated Bitrix CMS core
 
 ### Removed
+- Autopublish to Marketplace
 
-### Fixed
-
-### Security
 ## [1.0.15]
 - Updated Bitrix CMS core
 
