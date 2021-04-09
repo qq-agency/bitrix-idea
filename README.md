@@ -31,7 +31,7 @@ The plugin can be installed on following IntelliJ-based:
 
 | Plugin version number | Since Version | Until Version |
 | ----- | ------ | ------ |
-| 1.0.x | 2017.3 | 2020.4 |
+| 1.0.x | 2017.3 | 2021.1 |
 
 ## Bugs
 
