@@ -1,21 +1,9 @@
 # CHANGELOG
 
 ## [Unreleased]
-### Added
-
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
-## [1.0.26]
 ### Changed
 - Updated Bitrix CMS core
 
-## [1.0.0] - [1.0.25]
+## [1.0.0] - [1.0.26]
 ### Changed
 - Updated Bitrix CMS core
